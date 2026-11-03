@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Bridgette Soisson | Data Analytics • Business Intelligence • Insurance Systems
+</title>
+
+<meta name="description" content="Bridgette Soisson - Senior Data Analyst, Business Intelligence Analyst, and Insurance Systems Specialist with 30+ years of experience in analytics, reporting, OIPA, quality assurance, and insurance technology.">
+
+<style>
+
+:root {
+    --navy:#16324F;
+    --blue:#2563eb;
+    --light:#f8fafc;
+    --gray:#64748b;
+    --border:#e2e8f0;
+    --white:#ffffff;
+    --success:#0f766e;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero-logo{
+    display:block;
+    width:500px;
+    max-width:100%;
+    margin:0 auto 25px auto;
+    filter: drop-shadow(0 4px 12px rgba(255,255,255,.15));
+}
+
+.hero-intro{
+    max-width:750px;
+    font-size:1.15rem;
+    margin:0 auto;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    color:#1e293b;
+    background:#ffffff;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+header{
+    background:linear-gradient(135deg,#2C5A87,#3F78B2);
+    color:white;
+    padding:90px 0;
+}
+
+.hero h1{
+    font-size:3.2rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-weight:400;
+    margin-bottom:20px;
+    color:#dbeafe;
+}
+
+.hero p{
+    font-size:1.1rem;
+    max-width:700px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.button-row{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:8px;
+    margin-right:10px;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:white;
+    color:var(--navy);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn:hover{
+    opacity:.9;
+    transform:translateY(-2px);
+    transition:.2s;
+}
+
+nav{
+    background:white;
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a:hover{
+    color:var(--blue);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+}
+
+.nav-brand{
+    margin-right:25px;
+}
+
+.nav-brand img{
+    height:32px;
+    width:auto;
+    border-radius:6px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--navy);
+    font-weight:600;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:var(--navy);
+}
+
+.about{
+    background:var(--light);
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border:1px solid var(--border);
+    padding:25px;
+    border-radius:12px;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:15px;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.highlights{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.highlight{
+    background:white;
+    border-left:5px solid var(--blue);
+    padding:18px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.timeline{
+    border-left:4px solid var(--blue);
+    padding-left:30px;
+    margin-left:10px;
+}
+
+.timeline-item{
+    margin-bottom:40px;
+}
+
+.timeline-item h3{
+    color:var(--navy);
+}
+
+.company{
+    color:var(--blue);
+    font-weight:700;
+}
+
+.timeline p{
+    color:#475569;
+}
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:15px;
+}
+
+.cert{
+    background:var(--light);
+    padding:15px;
+    border-radius:8px;
+}
+
+.contact{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    color:white;
+}
+
+.contact a{
+    color:white;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:var(--gray);
+}
+
+.badge{
+    display:inline-block;
+    background:#dcfce7;
+    color:#166534;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:.9rem;
+    margin:5px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero h2{
+    font-size:1.1rem;
+}
+
+.nav-container{
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    max-width:700px;
+}
+
+.hero-logo{
+    width:420px;
+    max-width:100%;
+    display:block;
+    margin-bottom:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container hero">
+
+<img src="logo-bs.png"
+     alt="Bridgette Soisson Logo"
+     class="hero-logo">
+
+<p class="hero-intro">
+30+ years helping insurance organizations leverage analytics, business intelligence, quality assurance, and insurance systems expertise to drive better business decisions.
+</p>
+
+<div class="button-row">
+
+<a href="resume.pdf"
+   class="btn btn-primary">
+Download Resume
+</a>
+
+<a href="https://www.linkedin.com/in/bridgette-soisson-94543b72"
+   target="_blank"
+   class="btn btn-secondary">
+LinkedIn Profile
+</a>
+
+<a href="#contact"
+   class="btn btn-secondary">
+Contact Me
+</a>
+
+</div>
+</div>
+</header>
+
+<nav>
+<div class="nav-container">
+
+<div class="nav-brand">
+    <img src="logo-bs-only.png"
+         alt="Bridgette Soisson Logo">
+        </div>
+
+<a href="#about">About</a>
+<a href="#expertise">Expertise</a>
+<a href="#highlights">Highlights</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section id="about" class="about">
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I have more than 30 years of experience spanning actuarial science, insurance administration systems, quality assurance, data analytics, and business intelligence.
+</p>
+
+<br>
+
+<p>
+Most recently, my work has focused on Power BI, Tableau, SQL, Power Query, OIPA, testing automation, data validation, and business intelligence reporting that helps organizations make better decisions through data-driven insights.
+</p>
+
+</div>
+</section>
+
+<section id="expertise">
+<div class="container">
+
+<h2 class="section-title">Core Expertise</h2>
+
+<div class="skills-grid">
+
+<div class="card">
+<h3>Business Intelligence</h3>
+<ul>
+<li>Power BI</li>
+<li>Tableau</li>
+<li>Power Query</li>
+<li>DAX</li>
+<li>Dashboard Development</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Data & Analytics</h3>
+<ul>
+<li>SQL</li>
+<li>SQL Server</li>
+<li>ETL Validation</li>
+<li>Data Quality</li>
+<li>KPI Reporting</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Insurance Systems</h3>
+<ul>
+<li>OIPA</li>
+<li>Policy Administration</li>
+<li>Life Insurance Systems</li>
+<li>Actuarial Validation</li>
+<li>Business Analysis</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Quality Assurance</h3>
+<ul>
+<li>UAT</li>
+<li>Regression Testing</li>
+<li>JIRA</li>
+<li>Requirements Validation</li>
+<li>QA Leadership</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="highlights" class="about">
+<div class="container">
+
+<h2 class="section-title">Career Highlights</h2>
+
+<div class="highlights">
+
+<div class="highlight">
+30+ years of insurance industry experience
+</div>
+
+<div class="highlight">
+Enterprise OIPA implementation and conversion projects
+</div>
+
+<div class="highlight">
+Power BI and Tableau reporting solutions
+</div>
+
+<div class="highlight">
+SQL development and data validation expertise
+</div>
+
+<div class="highlight">
+Actuarial audit and compliance experience
+</div>
+
+<div class="highlight">
+Google Data Analytics Professional Certificate
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+
+<h2 class="section-title">Selected Analytics Projects</h2>
+
+<div class="highlights">
+
+<div class="highlight">
+<strong>Power BI Audit Analytics Dashboard</strong><br>
+Developed reporting solutions to analyze audit and testing results supporting business decision making.
+</div>
+
+<div class="highlight">
+<strong>OIPA Validation Automation</strong><br>
+Created Power Query validation tools to verify policy calculations and administration system values.
+</div>
+
+<div class="highlight">
+<strong>Tableau Testing Analytics</strong><br>
+Built dashboards used to identify trends, opportunities, and quality improvements.
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+
+<h2 class="section-title">Professional Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Consultant, Actuarial Analytics & Business Intelligence</h3>
+<div class="company">Nationwide Insurance | 2024–2026</div>
+<p>Power BI, Tableau, SQL, analytics, audit reporting, and actuarial systems development.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Team Lead Quality Assurance / Senior QA Specialist</h3>
+<div class="company">Equisoft | 2021–2024</div>
+<p>OIPA testing, Power Query validation tools, JIRA test planning, and life insurance system implementations.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Financial Consultant – Actuarial</h3>
+<div class="company">Nationwide Insurance | 2005–2021</div>
+<p>OIPA conversion support, ETL validation, Tableau reporting, actuarial validation, and insurance administration systems.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Retirement Consultant</h3>
+<div class="company">Aon Consulting / Watson Wyatt Worldwide | 1999–2005</div>
+<p>Pension administration, actuarial consulting, requirements analysis, and testing.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Assistant Actuary</h3>
+<div class="company">John Alden Life Insurance | 1992–1998</div>
+<p>Pricing, premium validation, system testing, actuarial support, and managed care products.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="certifications">
+<div class="container">
+
+<h2 class="section-title">Certifications & Professional Development</h2>
+
+<div class="cert-grid">
+
+<div class="cert">Google Data Analytics Professional Certificate</div>
+
+<div class="cert">Certification in the Practice of Data Analytics – The Ohio State University</div>
+
+<div class="cert">Salesforce Trailblazer Rank: Mountaineer</div>
+
+<div class="cert">Microsoft: Analyzing and Visualizing Data with Excel</div>
+
+<div class="cert">Microsoft: Querying with Transact-SQL</div>
+
+<div class="cert">Microsoft: Data Science Orientation</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+
+<h2 class="section-title">Let's Connect</h2>
+
+<p>Email: <a href="mailto:220bridgette@gmail.com">220bridgette@gmail.com</a></p>
+
+<p>Location: Chelem, Yucatán, Mexico</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/bridgette-soisson-94543b72"
+target="_blank">
+View Profile
+</a>
+</p>
+
+<br>
+
+<span class="badge">Data Analytics</span>
+<span class="badge">Business Intelligence</span>
+<span class="badge">Insurance Systems</span>
+<span class="badge">Power BI</span>
+<span class="badge">OIPA</span>
+
+</div>
+</section>
+
+<div class="footer">
+© 2026 Bridgette Soisson. All rights reserved.
+</div>
+
+</body>
+</html>
